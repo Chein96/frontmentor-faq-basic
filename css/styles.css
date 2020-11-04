@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: rgb(29, 30, 53);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 24px;
+}
+
+/* --- General --- */
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.33);
+    display: flex;
+    flex-direction: column;
+}
+
+.container__deco {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.container__deco__desktop {
+    align-items: center;
+    display: none;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.decoration__image {
+    transform: translateX(-6.66%);
+    filter: drop-shadow(0 40px 0 rgba(29, 30, 53, 0.15));
+}
+
+.decoration__icon {
+    display: none;
+    left: 0;
+    position: absolute;
+    transform: translate(-50%, 30%);
+}
+
+.container__faq {
+    flex: 1;
+    padding: 0 16px 48px 16px;
+}
+
+.container__faq__title {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+/* --- General End --- */
+
+/* --- Accordion --- */
+
+.question {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.question__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.questions__title__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.question--active .questions__title__arrow {
+    transform: rotate(180deg);
+}
+
+.question:hover .questions__title__text,
+.question--active .questions__title__text {
+    font-weight: 700;
+}
+
+.question__content {
+    display: none;
+}
+
+.question__content > p {
+    margin-top: 0;
+}
+
+.question--active .question__content {
+    display: block;
+}
+
+/* --- Accordion End --- */
+
+/* --- Responsive Styles --- */
+
+@media (min-width: 992px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 66vw;
+    }
+
+    .container__deco {
+        justify-content: left;
+        max-width: 50%;
+    }
+
+    .container__deco__desktop {
+        display: flex;
+    }
+
+    .decoration__image {
+        transform: translateX(-15%);
+    }
+
+    .decoration__icon {
+        display: block;
+    }
+
+    .container__deco__mobile {
+        display: none;
+    }
+
+    .container__faq {
+        padding: 32px 64px 64px 0;
+    }
+
+    .container__faq__title {
+        text-align: left;
+    }
+}
+
+/* --- Responsive Styles End --- */

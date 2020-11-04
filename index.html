@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Accordion</title>
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    FAQ Accordion HTML
+    <main class="container">
+        <section class="container__deco">
+            <div class="container__deco__desktop">
+                <img class="decoration__image" src="./images/illustration-woman-online-desktop.svg" alt="FAQ Illustration">
+            </div>
+            <img class="decoration__icon" src="./images/illustration-box-desktop.svg" alt="FAQ Illustration">    
+            <div class="container__deco__mobile">
+                <img class="decoration__image" src="./images/illustration-woman-online-mobile.svg" alt="FAQ Illustration">
+            </div>
+        </section>
+        <section class="container__faq">
+            <h1 class="container__faq__title">FAQ</h1>
+            <div class="accordion">
+                <!-- Questions Begin -->
+
+                <article class="question">
+                    <div class="question__title">
+                        <h3 class="questions__title__text">How many team members can I invite?</h3>
+                        <img class="questions__title__arrow" src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum nihil necessitatibus dolor veritatis nesciunt molestias eum unde.</p>
+                    </div>
+                </article>
+                
+                <article class="question">
+                    <div class="question__title">
+                        <h3 class="questions__title__text">What is the maximum file upload size?</h3>
+                        <img class="questions__title__arrow" src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+                    </div>
+                    <div class="question__content">
+                        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                    </div>
+                </article>
+
+                <article class="question">
+                    <div class="question__title">
+                        <h3 class="questions__title__text">How do I reset my password?</h3>
+                        <img class="questions__title__arrow" src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum nihil necessitatibus dolor veritatis nesciunt molestias eum unde.</p>
+                    </div>
+                </article>
+
+                <article class="question">
+                    <div class="question__title">
+                        <h3 class="questions__title__text">Can I cancel my subscription?</h3>
+                        <img class="questions__title__arrow" src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum nihil necessitatibus dolor veritatis nesciunt molestias eum unde.</p>
+                    </div>
+                </article>
+
+                <article class="question">
+                    <div class="question__title">
+                        <h3 class="questions__title__text">Do you provide additional support?</h3>
+                        <img class="questions__title__arrow" src="./images/icon-arrow-down.svg" alt="Arrow Icon">
+                    </div>
+                    <div class="question__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum nihil necessitatibus dolor veritatis nesciunt molestias eum unde.</p>
+                    </div>
+                </article>
+
+
+                <!-- Questions End -->
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
